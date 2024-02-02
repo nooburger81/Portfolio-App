@@ -2,7 +2,7 @@ import React from 'react';
 
 import TikTakToe from '../assets/tictaktoe.png';
 import AfterParty from '../assets/APScreenshot.png';
-import LRL from '../assets/lrlake.png';
+import LRL from '../assets/Lrlake2.png';
 
 
 const Work = () => {
@@ -54,11 +54,12 @@ const Work = () => {
 
                   </span>
                   <div className='pt-8 text-center'>
-                    <a href="https://watch.screencastify.com/v/lBPpT9N4lDBAGdTRLYmZ">
+                    {/* <a href="https://watch.screencastify.com/v/lBPpT9N4lDBAGdTRLYmZ">
                       <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>
                         Demo</button>
-                    </a>
-                    <a href="https://github.com/nooburger81/Group-Project-mine-">
+                    </a> */}
+
+                    <a href="https://github.com/nooburger81/GGJ_AfterParty">
                       <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>
                         Code</button>
                     </a>
@@ -77,14 +78,10 @@ const Work = () => {
 
                   </span>
                   <div className='pt-8 text-center'>
-                    <a href="https://watch.screencastify.com/v/CcImirE7YT2nsNXPSfxQ">
+                    <a href="https://youtu.be/0eiMteoMlJI">
                       <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>
                         Demo</button>
                     </a> 
-                    <a href="https://github.com/nooburger81/gtbc-pro3">
-                      <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>
-                        Code</button>
-                    </a>
 
                   </div>
                 </div>

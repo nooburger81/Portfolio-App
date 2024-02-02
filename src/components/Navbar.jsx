@@ -1,15 +1,28 @@
-import React from 'react'
+import React, { useState } from 'react'
 import {
     FaBars,
     FaTimes,
+    FaLinkedin,
+    FaArtstation,
+    FaYoutube,
+    FaItchIo,
+    FaGithub,
+    FaFacebook,
+    FaDiscord,
   } from 'react-icons/fa';
-  import Logo from '../assets/SeabassStudioLogo2.png';
+import { HiOutlineMail } from 'react-icons/hi';
+import { BsFillPersonLinesFill } from 'react-icons/bs';
+import { Link } from 'react-scroll';
+import Logo from '../assets/SeabassStudioLogo2.png';
 
 const Navbar = () => {
+    const [nav, setNav] = useState(false);
+    const handleClick = () => setNav(!nav);
+
   return (
     <div className='fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#fdfdfd] text-[#102E4A]'>
         <div>
-            <img src={Logo} alt='Logo Image' style={{ width: '100px'}} />
+            
         </div>
         
         {/*menu */}
@@ -23,21 +36,99 @@ const Navbar = () => {
         
 
           {/* Hamburger */}
-          <div className='hidden'>
-            <FaBars />
+          <div onClick={handleClick} className='md:hidden z-10'>
+          {!nav ? <FaBars /> : <FaTimes />}
           </div>
 
         {/* Mobile menu */}
-        <ul className='hidden'>
-            <li>Home</li>
-            <li>About</li>
-            <li>Skills</li>
-            <li>Work</li>
-            <li>Contact</li>
+        <ul className={
+          !nav
+            ? 'hidden'
+            : 'absolute top-0 left-0 w-full h-screen bg-[#55c1ff] flex flex-col justify-center items-center'
+        }>
+            <li className='py-6 text-4xl'>Home</li>
+            <li className='py-6 text-4xl'>About</li>
+            <li className='py-6 text-4xl'>Skills</li>
+            <li className='py-6 text-4xl'>Work</li>
+            <li className='py-6 text-4xl'>Contact</li>
         </ul>
         
         {/* Social icons */}
-        <div></div>
+        <div className='hidden lg:flex fixed flex-col top-[35%] left-0'>
+            <ul>
+            <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-600'>
+            <a
+              className='flex justify-between items-center w-full text-gray-300'
+              href='https://www.linkedin.com/in/brandon-sebastian-16b51083/'
+            >
+              Linkedin <FaLinkedin size={30} />
+            </a>
+          </li>
+          <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[black]'>
+            <a
+              className='flex justify-between items-center w-full text-gray-300'
+              href='https://www.linkedin.com/in/brandon-sebastian-16b51083/'
+            >
+              GitHub <FaGithub size={30} />
+            </a>
+          </li>
+          <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#102e4a]'>
+            <a
+              className='flex justify-between items-center w-full text-gray-300'
+              href='https://www.linkedin.com/in/brandon-sebastian-16b51083/'
+            >
+              ArtStation <FaArtstation size={30} />
+            </a>
+          </li>
+          <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#f56666]'>
+            <a
+              className='flex justify-between items-center w-full text-gray-300'
+              href='https://www.linkedin.com/in/brandon-sebastian-16b51083/'
+            >
+              Itch.Io <FaItchIo size={30} />
+            </a>
+          </li>
+          <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#be2d2d]'>
+            <a
+              className='flex justify-between items-center w-full text-gray-300'
+              href='https://www.linkedin.com/in/brandon-sebastian-16b51083/'
+            >
+              YouTube <FaYoutube size={30} />
+            </a>
+          </li>
+          <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#454eca]'>
+            <a
+              className='flex justify-between items-center w-full text-gray-300'
+              href='https://www.linkedin.com/in/brandon-sebastian-16b51083/'
+            >
+              Facebook <FaFacebook size={30} />
+            </a>
+          </li>
+          <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#6245ca]'>
+            <a
+              className='flex justify-between items-center w-full text-gray-300'
+              href='https://www.linkedin.com/in/brandon-sebastian-16b51083/'
+            >
+              Discord <FaDiscord size={30} />
+            </a>
+          </li>
+          <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#6fc2b0]'>
+            {/* <a > */}
+                
+                Email
+                <Link to='contact' smooth={true} duration={500}><HiOutlineMail size={30} className='flex justify-between items-center w-full text-gray-300' /></Link>
+            {/* </a> */}
+          </li>
+          <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#565f69]'>
+            <a
+              className='flex justify-between items-center w-full text-gray-300'
+              href='/'
+            >
+              Resume <BsFillPersonLinesFill size={30} />
+            </a>
+          </li>
+            </ul>
+        </div>
     </div>
   )
 }

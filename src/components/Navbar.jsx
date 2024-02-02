@@ -9,12 +9,12 @@ import {
     FaGithub,
     FaFacebook,
     FaDiscord,
+    FaInstagram,
   } from 'react-icons/fa';
 import { HiOutlineMail } from 'react-icons/hi';
 import { BsFillPersonLinesFill } from 'react-icons/bs';
 import { Link } from 'react-scroll';
 import 'animate.css';
-import Logo from '../assets/SeabassStudioLogo2.png';
 
 const Navbar = () => {
     const [nav, setNav] = useState(false);
@@ -103,6 +103,14 @@ const Navbar = () => {
               href='https://www.linkedin.com/in/brandon-sebastian-16b51083/'
             >
               Facebook <FaFacebook size={30} />
+            </a>
+          </li>
+          <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#000000]'>
+            <a
+              className='flex justify-between items-center w-full text-gray-300'
+              href='https://www.linkedin.com/in/brandon-sebastian-16b51083/'
+            >
+              Instagram <FaInstagram size={30} />
             </a>
           </li>
           <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#6245ca]'>

@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&family=EB+Garamond&family=Josefin+Sans&family=Lobster&family=Major+Mono+Display&family=Oswald&family=Poppins:ital,wght@0,400;0,700;1,100;1,200;1,400;1,900&family=Righteous&family=Sedgwick+Ave+Display&display=swap');
+
+@layer base {
+    body {
+        @apply font-[]
+    }
+}

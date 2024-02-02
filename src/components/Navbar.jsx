@@ -28,11 +28,31 @@ const Navbar = () => {
         
         {/*menu */}
             <ul className='hidden md:flex'>
-                <li>Home</li>
-                <li>About</li>
-                <li>Skills</li>
-                <li>Work</li>
-                <li>Contact</li>
+                <li>
+                  <Link to='home' smooth={true} duration={500}>
+            Home
+          </Link>
+          </li>
+                <li>
+                  <Link to='about' smooth={true} duration={500}>
+            About
+          </Link>
+          </li>
+                <li>
+                  <Link to='skills' smooth={true} duration={500}>
+            Skills
+          </Link>
+          </li>
+                <li>
+                  <Link to='work' smooth={true} duration={500}>
+            Work
+          </Link>
+          </li>
+                <li>
+                  <Link to='contact' smooth={true} duration={500}>
+            Contact
+          </Link>
+          </li>
             </ul>
         
 
@@ -47,11 +67,35 @@ const Navbar = () => {
             ? 'hidden'
             : 'absolute top-0 left-0 w-full h-screen bg-[#55c1ff] flex flex-col justify-center items-center'
         }>
-            <li className='py-6 text-4xl'>Home</li>
-            <li className='py-6 text-4xl'>About</li>
-            <li className='py-6 text-4xl'>Skills</li>
-            <li className='py-6 text-4xl'>Work</li>
-            <li className='py-6 text-4xl'>Contact</li>
+            <li className='py-6 text-4xl'>
+          <Link onClick={handleClick} to='home' smooth={true} duration={500}>
+            Home
+          </Link>
+        </li>
+        <li className='py-6 text-4xl'>
+          {' '}
+          <Link onClick={handleClick} to='about' smooth={true} duration={500}>
+            About
+          </Link>
+        </li>
+        <li className='py-6 text-4xl'>
+          {' '}
+          <Link onClick={handleClick} to='skills' smooth={true} duration={500}>
+            Skills
+          </Link>
+        </li>
+        <li className='py-6 text-4xl'>
+          {' '}
+          <Link onClick={handleClick} to='work' smooth={true} duration={500}>
+            Work
+          </Link>
+        </li>
+        <li className='py-6 text-4xl'>
+          {' '}
+          <Link onClick={handleClick} to='contact' smooth={true} duration={500}>
+            Contact
+          </Link>
+        </li>
         </ul>
         
         {/* Social icons */}
@@ -68,7 +112,7 @@ const Navbar = () => {
           <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[black]'>
             <a
               className='flex justify-between items-center w-full text-gray-300'
-              href='https://www.linkedin.com/in/brandon-sebastian-16b51083/'
+              href='https://www.github.com/nooburger81'
             >
               GitHub <FaGithub size={30} />
             </a>
@@ -76,15 +120,15 @@ const Navbar = () => {
           <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#102e4a]'>
             <a
               className='flex justify-between items-center w-full text-gray-300'
-              href='https://www.linkedin.com/in/brandon-sebastian-16b51083/'
-            >
+              href='https://www.artstation.com/brandonsebastian2'
+              >
               ArtStation <FaArtstation size={30} />
             </a>
           </li>
           <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#f56666]'>
             <a
               className='flex justify-between items-center w-full text-gray-300'
-              href='https://www.linkedin.com/in/brandon-sebastian-16b51083/'
+              href='https://bsebastian81.itch.io/'
             >
               Itch.Io <FaItchIo size={30} />
             </a>
@@ -92,7 +136,7 @@ const Navbar = () => {
           <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#be2d2d]'>
             <a
               className='flex justify-between items-center w-full text-gray-300'
-              href='https://www.linkedin.com/in/brandon-sebastian-16b51083/'
+              href='https://www.youtube.com/channel/UCHo-xC_yneGsp3FB_iCyYcg'
             >
               YouTube <FaYoutube size={30} />
             </a>
@@ -100,7 +144,7 @@ const Navbar = () => {
           <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#454eca]'>
             <a
               className='flex justify-between items-center w-full text-gray-300'
-              href='https://www.linkedin.com/in/brandon-sebastian-16b51083/'
+              href='https://www.facebook.com/bvspeterson'
             >
               Facebook <FaFacebook size={30} />
             </a>
@@ -108,7 +152,7 @@ const Navbar = () => {
           <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#000000]'>
             <a
               className='flex justify-between items-center w-full text-gray-300'
-              href='https://www.linkedin.com/in/brandon-sebastian-16b51083/'
+              href='https://www.instagram.com/_.bsebastian/'
             >
               Instagram <FaInstagram size={30} />
             </a>
@@ -116,7 +160,7 @@ const Navbar = () => {
           <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#6245ca]'>
             <a
               className='flex justify-between items-center w-full text-gray-300'
-              href='https://www.linkedin.com/in/brandon-sebastian-16b51083/'
+              href='https://discord.com/channels/1196952025284489327/1196952025724878988'
             >
               Discord <FaDiscord size={30} />
             </a>
@@ -124,18 +168,10 @@ const Navbar = () => {
           <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#6fc2b0]'>
             {/* <a > */}
                 
-                Email
-                <Link to='contact' smooth={true} duration={500}><HiOutlineMail size={30} className='flex justify-between items-center w-full text-gray-300' /></Link>
+                Email <Link to='contact' smooth={true} duration={500}><HiOutlineMail size={30} className='flex justify-between items-center w-full text-gray-300' /></Link>
             {/* </a> */}
           </li>
-          <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#565f69]'>
-            <a
-              className='flex justify-between items-center w-full text-gray-300'
-              href='/'
-            >
-              Resume <BsFillPersonLinesFill size={30} />
-            </a>
-          </li>
+
             </ul>
         </div>
     </div>

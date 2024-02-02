@@ -13,6 +13,7 @@ import {
 import { HiOutlineMail } from 'react-icons/hi';
 import { BsFillPersonLinesFill } from 'react-icons/bs';
 import { Link } from 'react-scroll';
+import 'animate.css';
 import Logo from '../assets/SeabassStudioLogo2.png';
 
 const Navbar = () => {
@@ -20,7 +21,7 @@ const Navbar = () => {
     const handleClick = () => setNav(!nav);
 
   return (
-    <div className='fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#fdfdfd] text-[#102E4A]'>
+    <div className='fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#fdfdfd] text-[#000000]'>
         <div>
             
         </div>
@@ -54,7 +55,7 @@ const Navbar = () => {
         </ul>
         
         {/* Social icons */}
-        <div className='hidden lg:flex fixed flex-col top-[35%] left-0'>
+        <div className='hidden lg:flex fixed flex-col top-[35%] left-0 animate__animated animate__slideInLeft animate__delay-7s'>
             <ul>
             <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-600'>
             <a

@@ -1,3 +1,7 @@
+# You can access my portoflio with this link:
+
+https://bs24-portfolio-app-5d96fa0b6fd9.herokuapp.com/
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

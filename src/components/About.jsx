@@ -19,7 +19,7 @@ const About = () => {
                 </div>
                 <div>
                     <p>
-                        For over 20 years I worked my way up the ladder of the culinary industry, and during that time I learned invaluable lessons in self-discipline, time management, and above all--how to be creative and love what you do. After 2021 I felt a sudden pull towards another passion of mine, software programming-specifically web and game development.  In a span of 9 months I went from having no clue what a "javascript" was, to not only creating this website but also currently being in development of 3 video games.  Don't let anyone tell you it's too late to learn something new and exciting. Making this pivot was the best choice I've ever made, and I cannot wait to journey further into this ever-evolving, ever-challenging, yet ALWAYS mind-blowing world of creative software development.
+                        For over two decades, I used my understanding of math and science, and a little magic, to create unique recipes for restaurants, friends, and family as a chef. I then pivoted towards 3D Art, specifically in regards to video game development. Now I use my love for math and science, and MOSTLY magic, to help create unique interactive experiences. Nothing gives me the warm fuzzies like shaders and scriptable PCG tools, visual effects and lighting optimization...
                     </p>
                 </div>
             </div>

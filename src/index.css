@@ -105,7 +105,7 @@
       0%, 100% { content: "developer"; }
       25% { content: "writer"; }
       50% { content: "reader"; }
-      75% { content: "human"; }
+      75% { content: "gamer"; }
     }
   
     .typewriter::before {
